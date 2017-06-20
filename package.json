@@ -1,8 +1,9 @@
 {
   "name": "jans-common-rn-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Jan's common react native components.",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "prepush": "npm run ts:lint",
     "prepublish": "npm run ts:build",
