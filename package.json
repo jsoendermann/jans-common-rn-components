@@ -1,0 +1,32 @@
+{
+  "name": "jans-common-rn-components",
+  "version": "0.0.1",
+  "description": "Jan's common react native components.",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepush": "npm run ts:lint",
+    "prepublish": "npm run ts:build",
+    "ts:lint": "tslint 'src/**/*.ts'",
+    "ts:build": "tsc",
+    "ts:watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsoendermann/jans-common-rn-components.git"
+  },
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": "^15.6.1",
+    "react-native": "^0.45.1"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.29",
+    "@types/react-native": "^0.44.11",
+    "husky": "^0.13.4",
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.4"
+  },
+  "dependencies": {
+    "styled-components": "^2.1.0"
+  }
+}
