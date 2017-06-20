@@ -9,8 +9,8 @@
         "sourceMap": false,
         "jsx": "react-native",
         "outDir": "dist",
-        "allowJs": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "declaration": true
     },
     "include": [
         "src/**/*.ts",
