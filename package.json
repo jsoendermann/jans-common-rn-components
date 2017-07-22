@@ -5,29 +5,29 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "prepush": "npm run ts:lint",
     "prepublish": "npm run ts:build",
-    "ts:lint": "tslint 'src/**/*.ts'",
     "ts:build": "tsc",
     "ts:watch": "tsc --watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsoendermann/jans-common-rn-components.git"
+    "url": "https://github.com/jsoendermann/react-native-jans-common-components.git"
   },
   "license": "Apache-2.0",
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-navigation": "*"
   },
   "devDependencies": {
-    "@types/react": "^15.0.29",
-    "@types/react-native": "^0.44.11",
-    "husky": "^0.13.4",
-    "tslint": "^5.4.3",
-    "typescript": "^2.3.4"
+    "@types/lodash": "^4.14.70",
+    "@types/react": "^15.0.38",
+    "@types/react-native": "^0.46.5",
+    "@types/react-navigation": "^1.0.15",
+    "typescript": "^2.4.2"
   },
   "dependencies": {
-    "styled-components": "^2.1.0"
+    "lodash": "^4.17.4",
+    "styled-components": "^2.1.1"
   }
 }
