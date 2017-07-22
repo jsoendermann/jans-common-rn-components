@@ -1,12 +1,13 @@
 import {
   StackNavigator,
+  NavigationContainer,
   NavigationRouteConfigMap,
   NavigationScreenConfig,
   NavigationStackScreenOptions,
 } from 'react-navigation'
 import { merge } from 'lodash'
 
-const ConstructStackNavigatorWithDefaultNavigationOptions = (
+export const ConstructStackNavigatorWithDefaultNavigationOptions = (
   defaultStackNavigationOptions: NavigationScreenConfig<
     NavigationStackScreenOptions
   >,
