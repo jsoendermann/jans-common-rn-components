@@ -19,7 +19,14 @@ export const Button = ({
   disabled,
 }: ButtonProps) =>
   <TouchableOpacity style={style} onPress={onPress} disabled={disabled}>
-    <Text style={[textStyle, color ? color : {}]}>
+    <Text
+      style={[
+        { fontSize: 19 },
+        textStyle ? textStyle : {},
+        color ? color : {},
+        disabled ? { color: '#aaa' } : {},
+      ]}
+    >
       {title}
     </Text>
   </TouchableOpacity>
