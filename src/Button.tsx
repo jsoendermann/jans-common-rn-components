@@ -21,7 +21,7 @@ export const Button = ({
   <TouchableOpacity style={style} onPress={onPress} disabled={disabled}>
     <Text
       style={[
-        { fontSize: 19 },
+        { fontSize: 19, textAlign: 'center' },
         textStyle ? textStyle : {},
         color ? { color } : {},
         disabled ? { color: '#aaa' } : {},
