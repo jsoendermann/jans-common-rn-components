@@ -23,7 +23,7 @@ export const Button = ({
       style={[
         { fontSize: 19 },
         textStyle ? textStyle : {},
-        color ? color : {},
+        color ? { color } : {},
         disabled ? { color: '#aaa' } : {},
       ]}
     >
