@@ -4,9 +4,10 @@ import styled from 'styled-components/native'
 
 import { ExpandingCenteringView, Button } from '.'
 
-export const NavigationPlaceholder = (title: string, routes: string[]) => ({
-  navigation,
-}: any) =>
+export const constructNavigationPlaceholder = (
+  title: string,
+  routes: string[],
+) => ({ navigation }: any) =>
   <ExpandingCenteringView>
     <Title>
       {title}
