@@ -5,7 +5,7 @@ import {
 } from 'react-navigation'
 import { merge } from 'lodash'
 
-export const ConstructStackNavigatorWithDefaultNavigationOptions = (
+export const constructStackNavigatorWithDefaultNavigationOptions = (
   defaultStackNavigationOptions: any,
 ) => (routeConfigMap: NavigationRouteConfigMap, stackConfig: any = {}) =>
   StackNavigator(
