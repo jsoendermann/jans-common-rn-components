@@ -1,5 +1,6 @@
 export * from './ExpandingView'
 export * from './ExpandingCenteringView'
 export * from './NavigationButtons'
-export * from './ConstructStackNavigatorWithDefaultNavigationOptions'
+export * from './constructStackNavigatorWithDefaultNavigationOptions'
+export * from './constructNavigationPlaceholder'
 export * from './Button'
