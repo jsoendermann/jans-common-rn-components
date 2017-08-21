@@ -1,3 +1,4 @@
+import * as React from 'react'
 import { ViewProperties, Text } from 'react-native'
 import { StyledComponentClass } from 'styled-components'
 import styled from 'styled-components/native'
