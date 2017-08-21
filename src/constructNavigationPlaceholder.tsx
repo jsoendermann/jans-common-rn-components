@@ -7,7 +7,7 @@ import { ExpandingCenteringView, Button } from '.'
 
 export const constructNavigationPlaceholder = (
   title: string,
-  routes: string[],
+  routes: string[] = [],
 ) => ({ navigation }: any) =>
   <ExpandingCenteringView>
     <Title>
