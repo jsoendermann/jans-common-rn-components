@@ -1,8 +1,4 @@
-import {
-  StackNavigator,
-  NavigationContainer,
-  NavigationRouteConfigMap,
-} from 'react-navigation'
+import { StackNavigator, NavigationContainer, NavigationRouteConfigMap } from 'react-navigation'
 import { merge } from 'lodash'
 
 export const constructStackNavigatorWithDefaultNavigationOptions = (
@@ -10,5 +6,5 @@ export const constructStackNavigatorWithDefaultNavigationOptions = (
 ) => (routeConfigMap: NavigationRouteConfigMap, stackConfig: any = {}) =>
   StackNavigator(
     routeConfigMap,
-    merge(stackConfig, { navigationOptions: defaultStackNavigationOptions }),
+    merge({}, { navigationOptions: defaultStackNavigationOptions }, stackConfig),
   )
