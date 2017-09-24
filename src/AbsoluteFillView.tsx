@@ -1,3 +1,4 @@
+import * as React from 'react'
 import { View, ViewStyle, StyleSheet } from 'react-native'
 
 export interface AbsoluteFillViewProps {
