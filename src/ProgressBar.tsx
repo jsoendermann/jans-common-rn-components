@@ -4,17 +4,19 @@ import styled from 'styled-components/native'
 // TODO(jan): Animate
 
 export interface ProgressBarProps {
+  height: number
   progress: number
   backgroundColor?: string
   barColor: string
 }
 
 export const ProgressBar = ({
+  height = 8,
   progress,
   backgroundColor = '#d9d9d9',
   barColor,
 }: ProgressBarProps) => (
-  <Container color={backgroundColor}>
+  <Container color={backgroundColor} height={height}>
     <DoneSection progress={progress} color={barColor} />
     <LeftSection progress={progress} />
   </Container>
@@ -22,11 +24,12 @@ export const ProgressBar = ({
 
 interface ContainerProps {
   color: string
+  height: number
 }
 const Container = styled.View`
   flex: 1;
   flex-direction: row;
-  height: 8;
+  height: ${(p: ContainerProps) => p.height};
   background-color: ${(p: ContainerProps) => p.color};
   border-radius: 1;
 `
