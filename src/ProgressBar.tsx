@@ -4,7 +4,7 @@ import styled from 'styled-components/native'
 // TODO(jan): Animate
 
 export interface ProgressBarProps {
-  height: number
+  height?: number
   progress: number
   backgroundColor?: string
   barColor: string
