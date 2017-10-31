@@ -41,7 +41,7 @@ interface DoneSectionProps {
 const DoneSection = styled.View`
   border-top-left-radius: 1;
   border-bottom-left-radius: 1;
-  flex: ${(p: DoneSectionProps) => p.progress};
+  flex: ${(p: DoneSectionProps) => Math.max(1, p.progress)};
   background-color: ${(p: DoneSectionProps) => p.color};
 `
 
@@ -49,5 +49,5 @@ interface LeftSectionProps {
   progress: number
 }
 const LeftSection = styled.View`
-  flex: ${(p: LeftSectionProps) => 1 - p.progress};
+  flex: ${(p: LeftSectionProps) => Math.min(0, 1 - p.progress)};
 `
