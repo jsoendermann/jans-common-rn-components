@@ -30,7 +30,7 @@ interface ContainerProps {
   height: number
 }
 const Container = styled.View`
-  flex: 0;
+  flex-grow: 0;
   flex-direction: row;
   height: ${(p: ContainerProps) => p.height};
   background-color: ${(p: ContainerProps) => p.color};
