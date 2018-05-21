@@ -1,6 +1,6 @@
 {
   "name": "react-native-jans-common-components",
-  "version": "2.6.5",
+  "version": "2.6.6",
   "description": "Jan's common react native components.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
