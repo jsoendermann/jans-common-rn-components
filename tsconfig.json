@@ -1,19 +1,13 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es6",
-        "noImplicitAny": true,
-        "strictNullChecks": true,
-        "noImplicitThis": true,
-        "alwaysStrict": true,
-        "sourceMap": false,
-        "jsx": "react-native",
-        "outDir": "dist",
-        "experimentalDecorators": true,
-        "declaration": true
-    },
-    "include": [
-        "src/**/*.ts",
-        "src/**/*.tsx"
-    ]
+  "include": ["./src/*.tsx"],
+  "compilerOptions": {
+    "target": "es6",
+    "strict": true,
+    "declaration": true,
+    "jsx": "react-native",
+    "moduleResolution": "node",
+    "lib": ["es2015", "es2016", "dom"],
+    "outDir": "./dist",
+    "skipLibCheck": true
+  }
 }

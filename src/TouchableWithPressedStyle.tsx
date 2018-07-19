@@ -4,6 +4,7 @@ import {
   TouchableWithoutFeedback,
   TouchableWithoutFeedbackProperties,
   ViewStyle,
+  GestureResponderEvent,
 } from 'react-native'
 
 export interface TouchableWithPressedStyleProps
@@ -22,14 +23,14 @@ export class TouchableWithPressedStyle extends React.Component<
 > {
   state = { isPressed: false }
 
-  onPressIn = () => {
+  onPressIn = (event: GestureResponderEvent) => {
     this.setState({ isPressed: true })
-    this.props.onPressIn && this.props.onPressIn()
+    this.props.onPressIn && this.props.onPressIn(event)
   }
 
-  onPressOut = () => {
+  onPressOut = (event: GestureResponderEvent) => {
     this.setState({ isPressed: false })
-    this.props.onPressOut && this.props.onPressOut()
+    this.props.onPressOut && this.props.onPressOut(event)
   }
 
   render() {
