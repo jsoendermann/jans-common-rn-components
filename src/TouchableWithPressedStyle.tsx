@@ -36,6 +36,7 @@ export class TouchableWithPressedStyle extends React.Component<
   render() {
     return (
       <TouchableWithoutFeedback
+        {...this.props}
         onPressIn={this.onPressIn}
         onPressOut={this.onPressOut}
         onPress={this.props.onPress}
